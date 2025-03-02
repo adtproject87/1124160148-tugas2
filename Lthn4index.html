@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Menggunakan Gambar dalam HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .circle {
+            border-radius: 50%;
+            border: 3px solid red;
+        }
+
+        .rounded {
+            border-radius: 15px;
+        }
+
+        .diamond {
+            transform: rotate(45deg);
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Panduan Menggunakan Gambar dalam HTML</h1>
+
+    <h2>1. Memasang Gambar pada Halaman</h2>
+    <img src="https://via.placeholder.com/300" alt="Gambar Avatar">
+
+    <h2>2. Format Gambar yang Didukung</h2>
+    <ul>
+        <li>APNG</li>
+        <li>ICO</li>
+        <li>JPEG</li>
+        <li>PNG</li>
+        <li>GIF</li>
+        <li>SVG</li>
+        <li>WebP</li>
+    </ul>
+
+    <h2>3. Mengambil File dari Harddisk</h2>
+    <img src="https://via.placeholder.com/300" alt="Gambar dari Harddisk">
+
+    <h2>4. Menyisipkan Gambar dalam Paragraf</h2>
+    <p>
+        <img src="https://via.placeholder.com/50" alt="Ikon" style="float:left; width:50px; margin-right:10px;">
+        Teks mengelilingi gambar yang ditempatkan di dalam paragraf.
+    </p>
+
+    <h2>5. Image Map</h2>
+    <img src="https://via.placeholder.com/600x400" usemap="#indonesia" alt="Peta Indonesia">
+    <map name="indonesia">
+        <area shape="rect" coords="0,0,100,100" href="https://example.com/jawa" alt="Jawa">
+        <area shape="circle" coords="150,150,50" href="https://example.com/sumatera" alt="Sumatera">
+    </map>
+
+    <h2>6. Membuat Link pada Gambar</h2>
+    <a href="https://example.com">
+        <img src="https://via.placeholder.com/100" alt="Buku" width="100">
+    </a>
+
+    <h2>7. Gambar Sebagai Link</h2>
+    <a href="https://example.com">
+        <img src="https://via.placeholder.com/100" alt="Ikon Link" width="100">
+    </a>
+
+    <h2>8. Auto Thumbnail</h2>
+    <img src="https://via.placeholder.com/150" alt="Thumbnail" width="150">
+
+    <h2>9. Gambar dengan Style</h2>
+    <div class="image-container">
+        <img src="https://via.placeholder.com/100" class="circle" alt="Gambar Lingkaran" width="100">
+        <img src="https://via.placeholder.com/100" class="rounded" alt="Gambar Sudut Melengkung" width="100">
+        <img src="https://via.placeholder.com/100" class="diamond" alt="Gambar Belah Ketupat">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 3px solid red;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.diamond {
+    transform: rotate(45deg);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
